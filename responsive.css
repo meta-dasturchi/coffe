@@ -1,0 +1,238 @@
+/* 1440px va undan yuqori ekranlar */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1360px;
+    }
+    .hero-brand-title {
+        font-size: 4.5rem;
+    }
+}
+
+/* 1200px — Desktop */
+@media (max-width: 1200px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .hero-brand-title {
+        font-size: 3.4rem;
+    }
+}
+
+/* 992px — Kichik noutbuklar */
+@media (max-width: 992px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .hero-img-card img {
+        height: 420px;
+    }
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* 768px — Planshetlar & Mobile Navbar */
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 72px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: var(--cream-bg);
+        border-bottom: 1px solid var(--border-color);
+        padding: 24px;
+        transform: translateY(-130%);
+        opacity: 0;
+        transition: var(--transition);
+        z-index: 999;
+        box-shadow: var(--shadow-md);
+    }
+
+    .nav-menu.open {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+    }
+
+    .hero-brand-title {
+        font-size: 2.8rem;
+    }
+
+    .hero-slogan {
+        font-size: 1.35rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .testimonial-card {
+        flex: 0 0 100%;
+    }
+
+    .about-experience-card {
+        position: static;
+        margin-top: 16px;
+        max-width: 100%;
+    }
+}
+
+/* 576px — Kichik planshetlar */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .hero-stats {
+        gap: 16px;
+    }
+
+    .menu-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-tabs {
+        justify-content: space-between;
+    }
+
+    .filter-btn {
+        flex: 1;
+        padding: 9px 10px;
+        font-size: 0.82rem;
+        text-align: center;
+    }
+
+    .sort-box select {
+        width: 100%;
+    }
+
+    .modal-card {
+        padding: 24px 18px;
+    }
+}
+
+/* 430px — Katta telefonlar */
+@media (max-width: 430px) {
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .hero-brand-title {
+        font-size: 2.35rem;
+    }
+
+    .hero-slogan {
+        font-size: 1.18rem;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-img-card img {
+        height: 320px;
+    }
+
+    .cart-drawer {
+        max-width: 100%;
+    }
+
+    .cart-footer-actions {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 375px — iPhone ekranlari */
+@media (max-width: 375px) {
+    .hero-brand-title {
+        font-size: 2.1rem;
+    }
+
+    .hero-stats {
+        flex-wrap: wrap;
+    }
+
+    .stat-divider {
+        display: none;
+    }
+
+    .contact-info-card, .contact-form-card {
+        padding: 24px 16px;
+    }
+}
+
+/* 320px — Kichik telefonlar */
+@media (max-width: 320px) {
+    .logo-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo-text {
+        font-size: 1.05rem;
+    }
+
+    .hero-brand-title {
+        font-size: 1.85rem;
+    }
+
+    .size-option {
+        font-size: 0.7rem;
+        padding: 6px 2px;
+    }
+
+    .product-bottom {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .add-cart-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

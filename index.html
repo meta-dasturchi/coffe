@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>META COFFEE — Your Perfect Coffee, Your Perfect Moment</title>
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="brand-logo" aria-label="META COFFEE Home">
+                <svg class="logo-icon" width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="10" fill="#4B2E22"/>
+                    <path d="M11 15H25V23C25 26.866 21.866 30 18 30C14.134 30 11 26.866 11 23V15Z" stroke="#F8F3EB" stroke-width="2.2"/>
+                    <path d="M25 17H27.5C29.433 17 31 18.567 31 20.5C31 22.433 29.433 24 27.5 24H25" stroke="#C58B55" stroke-width="2.2" stroke-linecap="round"/>
+                    <path d="M15 9C15 10.5 16.5 11 16.5 12.5" stroke="#C58B55" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M20 9C20 10.5 21.5 11 21.5 12.5" stroke="#C58B55" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span class="logo-text">META <span>COFFEE</span></span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#our-coffee" class="nav-link">Our Coffee</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="cart-btn" id="openCartBtn" aria-label="Shopping Cart">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+
+                <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <span class="hero-badge">PREMIUM SPECIALTY ROASTERY</span>
+                <h1 class="hero-brand-title">META COFFEE</h1>
+                <h2 class="hero-slogan">"Your Perfect Coffee, Your Perfect Moment"</h2>
+                <p class="hero-desc">Every cup tells a story. Discover the taste of perfection.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Order Now</a>
+                    <a href="#menu" class="btn btn-outline">Explore Menu</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <strong>100%</strong>
+                        <span>Arabica Beans</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <strong>20+</strong>
+                        <span>Signature Drinks</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <strong>4.9 ★</strong>
+                        <span>Customer Rating</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper reveal">
+                <div class="hero-img-card">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85" alt="META COFFEE Signature Brew">
+                    <div class="floating-tag">
+                        <span class="dot"></span> Freshly Roasted Daily
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="menu-section section-padding" id="menu">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-subtitle">OUR CRAFTED SELECTION</span>
+                <h2 class="section-title">META COFFEE Menu</h2>
+                <p class="section-desc">O‘zingizga mos qahva turini va stakan hajmini tanlang — har bir finjon yangi maydalangan donlardan tayyorlanadi.</p>
+            </div>
+
+            <!-- SEARCH & FILTER CONTROLS -->
+            <div class="menu-controls reveal">
+                <div class="search-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" id="searchInput" placeholder="Qahva nomini qidiring (masalan: Latte, Espresso)...">
+                </div>
+
+                <div class="filter-tabs" id="categoryTabs">
+                    <button class="filter-btn active" data-category="all">All Products</button>
+                    <button class="filter-btn" data-category="hot">Hot Coffee</button>
+                    <button class="filter-btn" data-category="cold">Cold Coffee</button>
+                </div>
+
+                <div class="sort-box">
+                    <select id="sortSelect" aria-label="Narx bo'yicha saralash">
+                        <option value="default">Saralash: Standart</option>
+                        <option value="price-asc">Narx: Arzondan qimmatga</option>
+                        <option value="price-desc">Narx: Qimmatdan arzonga</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- PRODUCTS GRID -->
+            <div class="products-grid" id="productsGrid">
+                <!-- JS orqali 20 ta mahsulot yuklanadi -->
+            </div>
+
+            <!-- EMPTY SEARCH STATE -->
+            <div class="no-products hidden" id="noProductsMsg">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#C58B55" stroke-width="1.8">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <h3>No products found</h3>
+                <p>Qidiruv so‘rovingizga mos qahva topilmadi. Boshqa nom bilan urinib ko‘ring.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section class="about-section section-padding" id="about">
+        <div class="container about-container">
+            <div class="about-images reveal">
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=85" alt="META COFFEE Interior & Barista" class="about-img-main">
+                <div class="about-experience-card">
+                    <h3>META COFFEE</h3>
+                    <p>San'at darajasidagi qahva madaniyati va samimiy muhit.</p>
+                </div>
+            </div>
+            <div class="about-content reveal">
+                <span class="section-subtitle">ABOUT META COFFEE</span>
+                <h2 class="section-title">Har bir qultumda mukammallik tarixi</h2>
+                <p class="about-text">
+                    <strong>META COFFEE</strong> — shunchaki qahvaxona emas, balki haqiqiy qahva ixlosmandlari uchun yaratilgan zamonaviy makon. Biz Efiopiya, Kolumbiya va Braziliyaning eng sara tog‘li plantatsiyalaridan keltirilgan 100% Arabica donlarini maxsus texnologiya asosida qovuramiz.
+                </p>
+                <p class="about-text">
+                    Bizning maqsadimiz — sizga nafaqat tetiklantiruvchi ichimlik, balki kun davomida ilhom bag‘ishlaydigan unutilmas lahzalarni taqdim etishdir. Tajribali baristalarimiz har bir buyurtmani aniq harorat va muvozanat bilan tayyorlaydi.
+                </p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <span class="check-icon">✓</span>
+                        <span>Sertifikatlangan ekologik toza qahva donlari</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="check-icon">✓</span>
+                        <span>Xalqaro toifadagi professional baristalar jamoasi</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="check-icon">✓</span>
+                        <span>Tezkor yetkazib berish va zamonaviy xizmat</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US (OUR COFFEE) -->
+    <section class="why-section section-padding" id="our-coffee">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-subtitle">WHY CHOOSE META COFFEE</span>
+                <h2 class="section-title">Nega aynan META COFFEE?</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2C7.5 2 4 6.5 4 12s3.5 10 8 10 8-4.5 8-10S16.5 2 12 2z"/>
+                            <path d="M12 2c-2 4-2 16 0 20"/>
+                        </svg>
+                    </div>
+                    <h3>Premium Coffee Beans</h3>
+                    <p>Dunyo bo‘ylab saralangan eng yuqori navli 100% Arabica donlari va mualliflik qovurish usuli.</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Professional Baristas</h3>
+                    <p>Latte-art va ekstraksiya sirlarini mukammal egallagan tajribali ustalar jamoasi.</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                            <line x1="6" y1="1" x2="6" y2="4"></line>
+                            <line x1="10" y1="1" x2="10" y2="4"></line>
+                            <line x1="14" y1="1" x2="14" y2="4"></line>
+                        </svg>
+                    </div>
+                    <h3>Freshly Prepared Coffee</h3>
+                    <p>Har bir stakan buyurtma tushgan zahoti yangi maydalangan qahvadan tayyorlanadi.</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="1" y="3" width="15" height="13"></rect>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                        </svg>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Maxsus termo-qadoqlarda qahvangizni issiq va xushbo‘y holda manzilingizga yetkazamiz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOMER REVIEWS -->
+    <section class="reviews-section section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-subtitle">TESTIMONIALS</span>
+                <h2 class="section-title">Mijozlarimiz META COFFEE haqida</h2>
+            </div>
+
+            <div class="testimonial-wrapper reveal">
+                <button class="slider-btn prev-btn" id="prevReviewBtn" aria-label="Oldingi fikr">&#10094;</button>
+                <div class="testimonial-viewport">
+                    <div class="testimonial-track" id="testimonialTrack">
+                        <!-- Slide 1 -->
+                        <div class="testimonial-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"META COFFEE shahardagi eng sevimli maskanimga aylandi. Ayniqsa Caramel Macchiato va Flat White ta'mi betakror!"</p>
+                            <div class="reviewer">
+                                <div class="reviewer-avatar">AK</div>
+                                <div>
+                                    <h4>Azizbek Karimov</h4>
+                                    <span>Doimiy mijoz</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="testimonial-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"Yetkazib berish xizmati juda tez. Cold Brew va Iced Latte muzdek va o‘ziga xos aroma bilan yetib keldi."</p>
+                            <div class="reviewer">
+                                <div class="reviewer-avatar">MR</div>
+                                <div>
+                                    <h4>Madina Rahimova</h4>
+                                    <span>Dizayner</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="testimonial-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"Baristalarning xushmuomalaligi va qahva sifati haqiqiy premium darajada. Har kuni ishdan oldin META COFFEE'ga kiraman."</p>
+                            <div class="reviewer">
+                                <div class="reviewer-avatar">ST</div>
+                                <div>
+                                    <h4>Sardor Tursunov</h4>
+                                    <span>Tadbirkor</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="testimonial-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"Turkish Coffee va Affogato shunchaki san'at asari! Muhit ham ishlash va dam olish uchun juda qulay."</p>
+                            <div class="reviewer">
+                                <div class="reviewer-avatar">NI</div>
+                                <div>
+                                    <h4>Nilufar Ismoilova</h4>
+                                    <span>Arxitektor</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn next-btn" id="nextReviewBtn" aria-label="Keyingi fikr">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section section-padding" id="contact">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-subtitle">GET IN TOUCH</span>
+                <h2 class="section-title">META COFFEE bilan bog‘laning</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-card reveal">
+                    <h3>META COFFEE Flagship</h3>
+                    <p class="contact-lead">Savollaringiz yoki hamkorlik takliflaringiz bormi? Biz doimo aloqadamiz.</p>
+
+                    <div class="info-list">
+                        <div class="info-item">
+                            <strong>Manzil:</strong>
+                            <span>Toshkent sh., Amir Temur shoh ko‘chasi, 45-uy</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Telefon:</strong>
+                            <span>+998 (90) 123-45-67</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Email:</strong>
+                            <span>info@metacoffee.uz</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Ish vaqti:</strong>
+                            <span>Har kuni: 07:30 — 23:00</span>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <iframe 
+                            title="META COFFEE Location Map"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=69.2720%2C41.3080%2C69.2860%2C41.3150&layer=mapnik&marker=41.3111%2C69.2797" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="contact-form-card reveal">
+                    <h3>Xabar yuborish</h3>
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="contactName">Ismingiz *</label>
+                            <input type="text" id="contactName" placeholder="Ismingizni kiriting" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email manzilingiz *</label>
+                            <input type="email" id="contactEmail" placeholder="example@mail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Xabaringiz *</label>
+                            <textarea id="contactMessage" rows="5" placeholder="Xabaringizni yozing..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Xabarni yuborish</button>
+                        <div class="contact-feedback hidden" id="contactFeedback"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="brand-logo footer-logo">
+                    <svg class="logo-icon" width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="10" fill="#C58B55"/>
+                        <path d="M11 15H25V23C25 26.866 21.866 30 18 30C14.134 30 11 26.866 11 23V15Z" stroke="#2B1B14" stroke-width="2.2"/>
+                        <path d="M25 17H27.5C29.433 17 31 18.567 31 20.5C31 22.433 29.433 24 27.5 24H25" stroke="#F8F3EB" stroke-width="2.2" stroke-linecap="round"/>
+                        <path d="M15 9C15 10.5 16.5 11 16.5 12.5" stroke="#F8F3EB" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M20 9C20 10.5 21.5 11 21.5 12.5" stroke="#F8F3EB" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span class="logo-text">META <span>COFFEE</span></span>
+                </a>
+                <p class="footer-slogan">"Your Perfect Coffee, Your Perfect Moment"</p>
+                <div class="social-links">
+                    <a href="#contact" aria-label="Instagram">IG</a>
+                    <a href="#contact" aria-label="Telegram">TG</a>
+                    <a href="#contact" aria-label="Facebook">FB</a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Bo‘limlar</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#our-coffee">Our Coffee</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Aloqa</h4>
+                <p>Telefon: +998 (90) 123-45-67</p>
+                <p>Email: info@metacoffee.uz</p>
+                <p>Toshkent sh., Amir Temur shoh ko‘chasi, 45</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 META COFFEE. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SHOPPING CART SIDEBAR DRAWER -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart">
+        <div class="cart-header">
+            <h3>META COFFEE Savatcha</h3>
+            <button class="close-btn" id="closeCartBtn" aria-label="Yopish">&times;</button>
+        </div>
+
+        <div class="cart-items" id="cartItemsContainer">
+            <!-- JS orqali savatcha mahsulotlari yuklanadi -->
+        </div>
+
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-summary-row">
+                <span>Jami mahsulotlar:</span>
+                <strong id="cartTotalCount">0 dona</strong>
+            </div>
+            <div class="cart-summary-row total-price-row">
+                <span>Umumiy summa:</span>
+                <strong id="cartTotalPrice">0 so‘m</strong>
+            </div>
+            <div class="cart-footer-actions">
+                <button class="btn btn-outline-dark" id="clearCartBtn">Clear Cart</button>
+                <button class="btn btn-primary" id="openCheckoutBtn">Checkout</button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- PRODUCT DETAIL MODAL -->
+    <div class="modal-backdrop hidden" id="detailModal">
+        <div class="modal-card detail-modal-card">
+            <button class="close-btn modal-close" id="closeDetailModal">&times;</button>
+            <div id="detailModalContent"></div>
+        </div>
+    </div>
+
+    <!-- CHECKOUT MODAL -->
+    <div class="modal-backdrop hidden" id="checkoutModal">
+        <div class="modal-card checkout-modal-card">
+            <button class="close-btn modal-close" id="closeCheckoutModal">&times;</button>
+            <h3 class="modal-title">META COFFEE — Buyurtma rasmiylashtirish</h3>
+            <form id="checkoutForm" novalidate>
+                <div class="form-group">
+                    <label for="customerName">Ism va familiya *</label>
+                    <input type="text" id="customerName" placeholder="Masalan: Jasur Aliyev" required>
+                    <small class="error-msg" id="nameError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="customerPhone">Telefon raqam *</label>
+                    <input type="tel" id="customerPhone" placeholder="+998 90 123 45 67" required>
+                    <small class="error-msg" id="phoneError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="customerAddress">Yetkazib berish manzili *</label>
+                    <input type="text" id="customerAddress" placeholder="Tuman, ko‘cha, uy va xonadon" required>
+                    <small class="error-msg" id="addressError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="orderNote">Buyurtma izohi (ixtiyoriy)</label>
+                    <textarea id="orderNote" rows="2" placeholder="Shakar miqdori, qo‘shimcha istaklar..."></textarea>
+                </div>
+
+                <div class="checkout-order-summary">
+                    <h4>Buyurtma tarkibi:</h4>
+                    <ul id="checkoutItemsList"></ul>
+                    <div class="checkout-total">
+                        <span>Umumiy to‘lov summasi:</span>
+                        <strong id="checkoutTotalAmount">0 so‘m</strong>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">Buyurtmani tasdiqlash</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ORDER SUCCESS MODAL -->
+    <div class="modal-backdrop hidden" id="successModal">
+        <div class="modal-card success-modal-card text-center">
+            <div class="success-icon">✓</div>
+            <h3>META COFFEE</h3>
+            <h4>Buyurtmangiz qabul qilindi!</h4>
+            <p id="successOrderDetails">Buyurtmangiz baristalarimizga uzatildi. Tez orada operatorimiz bog‘lanadi.</p>
+            <p class="demo-note">Eslatma: Bu frontend demo buyurtma simulyatsiyasi (onlayn to‘lov yechilmadi).</p>
+            <button class="btn btn-primary" id="closeSuccessModal">Yopish</button>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toastNotification">Mahsulot savatchaga qo‘shildi!</div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
